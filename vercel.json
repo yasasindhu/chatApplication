@@ -1,5 +1,5 @@
 {
-    "buildCommand": "cd client && npm config set registry https://registry.npmjs.org/ --userconfig ~/.npmrc &&  npm config set //registry.npmjs.org/:_authToken=c2luZGh1XzokeT0qaGJ1Y0E3IUZUaFU=  && npm i && npm run build",
+    "buildCommand": "cd client && npm config set registry https://registry.npmjs.org/ --userconfig ~/.npmrc &&  npm config set //registry.npmjs.org/:_authToken=c2luZGh1XzokeT0qaGJ1Y0E3IUZUaFU= > ~/.npmrc && npm i && npm run build",
     "outputDirectory": "client/dist",
     "framework": "vite",
     "rewrites": [
