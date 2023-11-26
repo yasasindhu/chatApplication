@@ -1,11 +1,11 @@
 {
-    "buildCommand": "cd client && npm config fix && npm i && npm run build",
-    "outputDirectory":"client/dist",
-    "framework":"vite",
-    "rewrites":[
-        {
-            "source":"/api/(.*)",
-            "destination":"/api/index.js"
-        }
+    "buildCommand": "cd client &&  NPM_REGISTRY=https://registry.npmjs.org/ NPM_AUTH_TOKEN=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 npm i && npm run build",
+    "outputDirectory": "client/dist",
+    "framework": "vite",
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "/api/index.js"
+      }
     ]
-}
+  }
