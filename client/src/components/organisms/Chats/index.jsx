@@ -11,7 +11,7 @@ export default function Chats() {
     const [messages, setMessages] = useState([]);
     const [newMessageText, setNewMessageText] = useState('');
     useEffect(() => {
-        const ws = new WebSocket('ws://localhost:4000');
+        const ws = new WebSocket(import.meta.env.VITE_WEBSOCKET_URL);
         setWs(ws);
         ws.addEventListener('message', handleMessage);
     }, []);
