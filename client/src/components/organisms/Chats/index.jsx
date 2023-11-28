@@ -43,7 +43,6 @@ export default function Chats() {
     function sendMessage(e) {
         e.preventDefault();
         if (ws && ws.readyState === WebSocket.OPEN) {
-            console.log('sending');
             ws.send(
                 JSON.stringify({
                     message: {
@@ -113,7 +112,6 @@ export default function Chats() {
                   <div key={message._id} className={(message.sender === id ? 'text-right': 'text-left')}>
                     <div className={"text-left inline-block p-2 my-2 rounded-md text-sm " +(message.sender === id ? 'bg-blue-500 text-white':'bg-white text-gray-500')}>
                       {message.text}
-                      {console.log('logging',message.text)}
                     </div>
                   </div>
                 ))}

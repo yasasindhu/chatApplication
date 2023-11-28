@@ -133,7 +133,6 @@ wss.on('connection', (connection, req) => {
 
     connection.on('message', async (message) => {
         const messageData = JSON.parse(message.toString());
-        console.log('wow', messageData);
         const { recipient, text } = messageData.message;
         if (recipient && text) {
             const messageDoc = await Message.create({
@@ -141,7 +140,6 @@ wss.on('connection', (connection, req) => {
                 recipient,
                 text
             });
-            console.log('text issss', text);
             [...wss.clients].filter(c => c.userId === recipient)
                 .forEach(c => c.send(
                     JSON.stringify({

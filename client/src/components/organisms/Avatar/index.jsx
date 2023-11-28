@@ -1,6 +1,5 @@
 // eslint-disable-next-line react/prop-types
 export default function Avatar({username,userId}){
-    // console.log("username is",username);
     const colors=['bg-red-200','bg-green-200','bg-purple','bg-blue-200','bg-yellow-200','bg-teal-200'];
     const userIdBase10=parseInt(userId,13);
     const colorIndex=userIdBase10%colors.length;
