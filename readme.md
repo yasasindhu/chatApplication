@@ -68,6 +68,16 @@ Real-time chat application with user registration, login, and WebSocket-based me
         ```
         npm run dev
         ```
+
+## Screenshots 
+![register](/assets/images/register.png)
+![login](/assets/images/login.png)
+![initialScreen](/assets/images/noUserSelected.png)
+![coversation](/assets/images/conversation.png)
+![conversationEnd](/assets/images/conversationEnd.png)
+![conv0](/assets/images/conversation1.png)
+
+
 ## Authentication
 
 - Uses JWT for authentication.
